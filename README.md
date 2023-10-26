@@ -215,7 +215,7 @@ Here is an example where all the parameters are held constant.
   "hold_p_detach": true,
   "hold_p_initial_block": true,
   "hold_p_cyclic_block": true,
-  "channel_models": [
+  "channel_settings": [
     {
       "hold_p_bleach": true,
       "hold_p_dud": true
@@ -232,7 +232,7 @@ Of course, holding all parameters constant is a bit silly. Let's imagine a real 
   "hold_p_detach": true,
   "hold_p_initial_block": false,
   "hold_p_cyclic_block": true,
-  "channel_models": [
+  "channel_settings": [
     {
       "hold_p_bleach": false,
       "hold_p_dud": true
@@ -247,7 +247,7 @@ Alternatively, missing values default to false, so you could instead write:
 {
   "hold_p_detach": true,
   "hold_p_cyclic_block": true,
-  "channel_models": [
+  "channel_settings": [
     {
       "hold_p_dud": true
     }
@@ -261,12 +261,12 @@ You can also extend this across multiple channels, similarly to the sequencing m
 {
   "hold_p_detach": true,
   "hold_p_cyclic_block": true,
-  "channel_models": [
+  "channel_settings": [
     {
       "hold_p_dud": true
     }
   ],
-  "channel_models": [
+  "channel_settings": [
     {
       "hold_p_dud": true
     }
