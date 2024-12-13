@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   test_cereal_linux:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container: ${{ matrix.CONTAINER }}
     strategy:
       fail-fast: false
